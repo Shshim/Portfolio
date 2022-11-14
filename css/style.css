@@ -1,0 +1,26 @@
+.nav_bar {
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nav_bar ul li {
+    display: inline-block;
+}
+
+.nav_bar ul li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
+}
+
+body {
+    overflow: auto;
+}
