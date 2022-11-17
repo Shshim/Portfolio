@@ -42,3 +42,20 @@ a.skip{
     color: black;
     text-decoration-style: solid;
   }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .internship {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+  }
+  
+  .internship img {
+    width: 100%;
+    height: auto;
+  }
