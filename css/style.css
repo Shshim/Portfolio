@@ -44,55 +44,12 @@ a.skip{
     text-decoration-style: solid;
   }
 
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .gallery img {
+  img {
     margin-top: 5%;
     border: 5px solid black;
-  }
-
-  .intern {
-    display: grid;
-    grid-template-columns: 100%;
-  }
-  
-  .intern img {
-    width: 100%;
-    height: auto;
-  }
-
-  img {
-    width: 90%;
+    width: 80%;
   }
 
   h1, p {
     text-align: center;
-  }
-
-  @media only screen and (min-width: 450) {
-
-    /* WHY ISN'T THIS WORKING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-    .intern {
-      display: grid;
-      grid-template-columns: 100%;
-    }
-    .intern img {
-      width: 100%;
-      height: auto;
-    }
-  
-  }
-
-  @media only screen and (min-width: 900) {
-  
-  }
-
-  @media only screen and (min-width: 1200) {
-  
   }
