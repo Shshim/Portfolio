@@ -13,15 +13,24 @@
 
   @media only screen and (min-width: 500px) {
     .gallery img {
-      margin-top: 5%;
       border: 5px solid red;
-      width: 20%;
+      width: 30%;
     }
     .gallery {
+        flex-direction: row;
+        align-items: stretch;
 
     }
   }
 
   @media only screen and (min-width: 900px) {
-  
+    .gallery img {
+        margin: 5%;
+        border: 5px solid darkgreen;
+        width: 20%;
+      }
+      .gallery {
+        background-color: lightblue;
+          flex-direction: row;
+      }
   }

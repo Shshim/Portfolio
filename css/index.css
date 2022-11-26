@@ -1,0 +1,42 @@
+
+.portrait1 {
+    background-color: aquamarine;
+}
+
+.portrait1 img, .portrait2 img {
+    width: 80%;
+}
+
+.portrait2 {
+    background-color: lightsalmon;
+}
+
+
+
+@media only screen and (min-width: 500px) {
+    .portrait1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        font-size: 2rem;
+    }
+    .portrait1 img, .portrait2 img {
+        margin: 5%;
+        width: 50%;
+    }
+    .portrait1 p, .portrait2 p {
+        display: inline;
+    }
+    .portrait2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+}
