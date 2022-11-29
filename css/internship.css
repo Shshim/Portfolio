@@ -11,6 +11,10 @@
     height: auto;
   }
 
+  .intern caption{
+    font-size: 12px;
+  }
+
 @media only screen and (min-width: 500px) {
 
     /* WHY ISN'T THIS WORKING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
@@ -21,7 +25,6 @@
       width: 100%;
       height: auto;
     }
-  
   }
 
   @media only screen and (min-width: 900px) {
