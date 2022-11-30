@@ -11,6 +11,13 @@
     background-color: lightsalmon;
 }
 
+.nav_bar ul li:nth-child(1) {
+    padding: 10px;
+    font-size: 32px;
+    background-color: cyan;
+    text-decoration: none;
+}
+
 
 @media only screen and (min-width: 500px) {
     .portrait1 {
