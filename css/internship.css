@@ -4,6 +4,8 @@
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    width: 100%;
+    align-items: center;
   }
   
   .intern img {
@@ -15,9 +17,40 @@
     font-size: 12px;
   }
 
-@media only screen and (min-width: 500px) {
+  .intern-items {
+    text-align: center;
+    margin: 30px;
+  }
 
-    /* WHY ISN'T THIS WORKING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  .detailed-info2, .detailed-info1 {
+    display: none;
+  }
+
+@media only screen and (min-width: 700px) {
+
+    .intern {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .detailed-info2 {
+      display: block;
+      text-align: center;
+    }
+
+  
+
+    .right-item {
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+    .left-item {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+  }
+
+  @media only screen and (min-width: 1100px) {
     .intern {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -25,8 +58,16 @@
       width: 100%;
       height: auto;
     }
-  }
 
-  @media only screen and (min-width: 900px) {
-  
+    .detailed-info2 {
+      display: none;
+    }
+    .detailed-info1 {
+      display: block;
+    }
+    .right-item {
+      grid-column-start:initial;
+      grid-column-end: initial;
+    }
+
   }
