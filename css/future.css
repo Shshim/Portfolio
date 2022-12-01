@@ -1,6 +1,22 @@
-.nav_bar ul li:nth-child(4) {
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+main {
+    margin: 40px;
+}
+
+#future {
     padding: 10px;
-    font-size: 32px;
+    font-size: 40px;
     background-color: cyan;
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.button1 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
 }
