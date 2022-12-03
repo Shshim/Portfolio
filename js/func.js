@@ -5,9 +5,9 @@
 // });
 
 
-document.querySelector("#show-menu").addEventListener("click", function() {
+document.querySelector("#show-menu").addEventListener("click", function () {
     event.preventDefault();
-	console.log("worked");
+    console.log("worked");
     document.querySelector("#show-menu").style.display = "none";
     document.querySelector("#hide-menu").style.display = "block";
     document.querySelector("#index").style.display = "block";
@@ -16,9 +16,9 @@ document.querySelector("#show-menu").addEventListener("click", function() {
     document.querySelector("#hobby").style.display = "block";
 })
 
-document.querySelector("#hide-menu").addEventListener("click", function() {
+document.querySelector("#hide-menu").addEventListener("click", function () {
     event.preventDefault();
-	console.log("worked");
+    console.log("worked");
     document.querySelector("#show-menu").style.display = "block";
     document.querySelector("#hide-menu").style.display = "none";
     document.querySelector("#index").style.display = "none";
@@ -26,3 +26,42 @@ document.querySelector("#hide-menu").addEventListener("click", function() {
     document.querySelector("#future").style.display = "none";
     document.querySelector("#hobby").style.display = "none";
 })
+
+
+
+
+function calc_time() {
+    var date = new Date()
+    var ampm = date.getHours() >= 12 ? ' PM' : ' AM';
+
+    var date1 = date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear();
+    date1 = date1 + " - " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + ampm;
+    document.getElementById('time').innerHTML = date1;
+    display_time();
+}
+function display_time() {
+    var refresh = 1000;
+    mytime = setTimeout('calc_time()', refresh)
+}
+display_time()
+
+function sendMail1() {
+    var link = "mailto:kwoosuk@umich.edu"
+             + "?"
+             + "subject=" + encodeURIComponent("About you")
+             + "&body=" + encodeURIComponent(document.getElementById('text1').value)
+    ;
+    
+    window.location.href = link;
+}
+
+function sendMail2() {
+    var link = "mailto:shshim@umich.edu"
+             + "?"
+             + "subject=" + encodeURIComponent("About you")
+             + "&body=" + encodeURIComponent(document.getElementById('text2').value)
+    ;
+    
+    window.location.href = link;
+}
+

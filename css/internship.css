@@ -1,82 +1,91 @@
-
-
 .intern {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-    width: 100%;
-    align-items: center;
-  }
-  
-  .intern img {
-    width: 80%;
-    height: auto;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  width: 100%;
+  align-items: center;
+}
 
-  .intern caption{
-    font-size: 12px;
-  }
+.intern img {
+  width: 80%;
+  height: auto;
+}
 
-  .intern-items {
-    text-align: center;
-    margin: 30px;
-  }
+.intern caption {
+  font-size: 12px;
+}
 
-  .detailed-info2, .detailed-info1 {
-    display: none;
-  }
+.intern-items {
+  text-align: center;
+  margin: 30px;
+}
 
-  #internship {
-    padding: 10px;
-    font-size: 40px;
-    background-color: cyan;
-    font-weight: bolder;
-    text-decoration: underline;
-  }
+.detailed-info2,
+.detailed-info1 {
+  display: none;
+}
+
+#internship {
+  padding: 10px;
+  font-size: 40px;
+  background-color: cyan;
+  font-weight: bolder;
+  text-decoration: none;
+}
 
 @media only screen and (min-width: 700px) {
 
-    .intern {
-      grid-template-columns: 1fr 1fr;
-    }
+  .intern {
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .detailed-info2 {
-      display: block;
-      text-align: center;
-    }
+  .detailed-info2 {
+    display: block;
+    text-align: center;
+  }
+
+
+
+  .right-item {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .left-item {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+}
+
+@media only screen and (min-width: 1100px) {
+  .intern {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .intern img {
+    width: 100%;
+    height: auto;
+  }
+
+  .detailed-info2 {
+    display: none;
+  }
+
+  .detailed-info1 {
+    margin: 20px;
+    display: block;
+  }
+
+  .right-item {
+    grid-column-start: initial;
+    grid-column-end: initial;
+  }
+
 
   
 
-    .right-item {
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
-    .left-item {
-      grid-column-start: 1;
-      grid-column-end: 2;
-    }
 
-  }
 
-  @media only screen and (min-width: 1100px) {
-    .intern {
-      grid-template-columns: 1fr 1fr 1fr;
-    }
-    .intern img {
-      width: 100%;
-      height: auto;
-    }
 
-    .detailed-info2 {
-      display: none;
-    }
-    .detailed-info1 {
-      margin: 20px;
-      display: block;
-    }
-    .right-item {
-      grid-column-start:initial;
-      grid-column-end: initial;
-    }
-
-  }
+}

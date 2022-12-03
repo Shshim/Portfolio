@@ -24,7 +24,7 @@
 #hobby {
   padding: 10px;
   font-size: 40px;
-  text-decoration: underline;
+  text-decoration: none;
   background-color: cyan;
   font-weight: bolder;
 }

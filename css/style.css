@@ -85,6 +85,30 @@ a.skip{
     display: none;
   }
 
+
+
+
+
+
+
+  #time {
+    font-size: 2rem;
+  }
+
+
+
+
+ header {
+  background-color: #FFCA3A;
+ }
+
+ body {
+  background-color: #1982C4;
+ }
+
+
+
+
   @media only screen and (min-width: 700px) {
 
    #index, #internship, #future, #hobby {

@@ -14,6 +14,7 @@
 <body>
     <a class="skip" href="#skip">Skip to Main Content</a>
     <header>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <nav class="nav_bar">
             <ul>
                 <li id="show-menu"><a href="">Show Menu</a></li>
@@ -22,27 +23,42 @@
                 <li id="internship"><a href="internship.html">Internship</a></li>
                 <li id="hobby"><a href="hobby.html">Hobby</a></li>
                 <li id="future"><a href="future.html"> Contacts </a> </li>
+
             </ul>
         </nav>
-        <h1> Contacts </h1>
     </header>
     <main id="skip">
+        <h2><span id='time'></span></h2>
+        <h1>Contacts</h1>
         <div>
             <p>
                 If you have questions or want to contact us for some internships
                 Contact us via:
             </p>
         </div>
-        <div class="button1">
-            <button>
-                <p>Woosuk's email: kwoosuk@umich.edu</p>
-            </button>
-            make the buttons to open up email
+        <div class="email">
+            <div>
+                <h2>Email to Woosuk</h2>
+            </div>
+            <div class="myText">
+                <label for="text1"><p class="label">Woosuk</p></label>
+                <textarea id="text1" rows="10" cols="40" placeholder="Dear Woosuk Kang,"></textarea>
+            </div>
+            <div class="button1">
+                <button id="b1" onclick="sendMail1(); return false">Send</button>
+            </div>
         </div>
-        <div class="button1">
-            <button>
-                <p>Daniel's email: shshim@umich.edu</p>
-            </button>
+        <div class="email">
+            <div>
+                <h2>Email to Daniel</h2>
+            </div>
+            <div class="myText">
+                <label for="text2"><p class="label">Daniel</p></label>
+                <textarea id="text2" rows="10" cols="40" placeholder="Dear Daniel Shim,"></textarea>
+            </div>
+            <div class="button1">
+                <button id="b1" onclick="sendMail2(); return false">Send</button>
+            </div>
         </div>
         <script src="js/func.js"></script>
     </main>
