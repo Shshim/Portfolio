@@ -99,11 +99,12 @@ a.skip{
 
 
  header {
-  background-color: #FFCA3A;
+  background-color: #FFCF9C;
  }
 
+
  body {
-  background-color: #1982C4;
+  background-image: linear-gradient(to bottom right, #F8F4A6 10%, #3943B7 115%);
  }
 
 
