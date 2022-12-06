@@ -65,3 +65,15 @@ function sendMail2() {
     window.location.href = link;
 }
 
+const card1 = document.querySelector("#card_woosuk");
+
+card1.addEventListener('click', function() {
+    card1.classList.toggle("is_flipped");
+});
+
+const card2 = document.querySelector("#card_daniel");
+
+card2.addEventListener('click', function() {
+    card2.classList.toggle("is_flipped");
+});
+
