@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/future.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <a class="skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <nav class="nav_bar">
+            <ul>
+                <li id="show-menu"><a href="">Show Menu</a></li>
+                <li id="hide-menu"><a href="">Hide Menu</a></li>
+                <li id="index"><a href="index.html">About Us</a></li>
+                <li id="internship"><a href="internship.html">Internship</a></li>
+                <li id="hobby"><a href="hobby.html">Hobby</a></li>
+                <li id="future"><a href="future.html"> Contacts </a> </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main id="skip">
+        <h2><span id='time'></span></h2>
+        <h1>Contacts</h1>
+        <div>
+            <p>
+                If you have questions or want to contact us for some internships
+                Contact us via:
+            </p>
+        </div>
+        <div class="email">
+            <div>
+                <h2>Email to Woosuk</h2>
+            </div>
+            <div class="myText">
+                <label for="text1"><p class="label">Woosuk</p></label>
+                <textarea id="text1" rows="10" cols="40" placeholder="Dear Woosuk Kang,"></textarea>
+            </div>
+            <div class="button1">
+                <button class="b1" onclick="sendMail1(); return false">Send</button>
+            </div>
+        </div>
+        <div class="email">
+            <div>
+                <h2>Email to Daniel</h2>
+            </div>
+            <div class="myText">
+                <label for="text2"><p class="label">Daniel</p></label>
+                <textarea id="text2" rows="10" cols="40" placeholder="Dear Daniel Shim,"></textarea>
+            </div>
+            <div class="button1">
+                <button class="b1" onclick="sendMail2(); return false">Send</button>
+            </div>
+        </div>
+        <script src="js/func.js"></script>
+    </main>
+
+    <footer>
+        Daniel and Woosuk copyright &copy
+    </footer>
+
+</body>
+
+</html>
