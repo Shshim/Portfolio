@@ -29,6 +29,10 @@
   font-weight: bolder;
 }
 
+#hobby a {
+  font-size: 24px;
+}
+
 
 @media only screen and (min-width: 700px) {
   .gallery img {

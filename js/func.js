@@ -27,6 +27,35 @@ document.querySelector("#hide-menu").addEventListener("click", function () {
     document.querySelector("#hobby").style.display = "none";
 })
 
+window.addEventListener('resize', function () {
+    if (window.innerWidth >= 700) {
+        document.querySelector("#show-menu").style.display = "none";
+        document.querySelector("#hide-menu").style.display = "none";
+        document.querySelector("#index").style.display = "inline-block";
+        document.querySelector("#internship").style.display = "inline-block";
+        document.querySelector("#future").style.display = "inline-block";
+        document.querySelector("#hobby").style.display = "inline-block";
+    } else if (window.innerWidth < 700) {
+        if (document.querySelector("#show-menu").style.display === "block") {
+            console.log("display: block");
+            document.querySelector("#show-menu").style.display = "block";
+            document.querySelector("#hide-menu").style.display = "none";
+            document.querySelector("#index").style.display = "none";
+            document.querySelector("#internship").style.display = "none";
+            document.querySelector("#future").style.display = "none";
+            document.querySelector("#hobby").style.display = "none";
+        } else if (document.querySelector("#show-menu").style.display === "none") {
+            console.log("display: none");
+            document.querySelector("#show-menu").style.display = "none";
+            document.querySelector("#hide-menu").style.display = "block";
+            document.querySelector("#index").style.display = "block";
+            document.querySelector("#internship").style.display = "block";
+            document.querySelector("#future").style.display = "block";
+            document.querySelector("#hobby").style.display = "block";
+        }
+    }
+})
+
 
 
 
@@ -47,33 +76,20 @@ display_time()
 
 function sendMail1() {
     var link = "mailto:kwoosuk@umich.edu"
-             + "?"
-             + "subject=" + encodeURIComponent("About you")
-             + "&body=" + encodeURIComponent(document.getElementById('text1').value)
-    ;
-    
+        + "?"
+        + "subject=" + encodeURIComponent("About you")
+        + "&body=" + encodeURIComponent(document.getElementById('text1').value)
+        ;
+
     window.location.href = link;
 }
 
 function sendMail2() {
     var link = "mailto:shshim@umich.edu"
-             + "?"
-             + "subject=" + encodeURIComponent("About you")
-             + "&body=" + encodeURIComponent(document.getElementById('text2').value)
-    ;
-    
+        + "?"
+        + "subject=" + encodeURIComponent("About you")
+        + "&body=" + encodeURIComponent(document.getElementById('text2').value)
+        ;
+
     window.location.href = link;
 }
-
-const card1 = document.querySelector("#card_woosuk");
-
-card1.addEventListener('click', function() {
-    card1.classList.toggle("is_flipped");
-});
-
-const card2 = document.querySelector("#card_daniel");
-
-card2.addEventListener('click', function() {
-    card2.classList.toggle("is_flipped");
-});
-
