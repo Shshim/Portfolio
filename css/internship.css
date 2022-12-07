@@ -9,6 +9,11 @@
 .intern img {
   width: 80%;
   height: auto;
+  border-radius: 30px;
+}
+
+.intern h2 {
+  margin-top: 35px;
 }
 
 .intern caption {
@@ -26,15 +31,13 @@
 }
 
 #internship {
-  padding: 10px;
-  font-size: 40px;
   background-color: cyan;
   font-weight: bolder;
   text-decoration: none;
 }
 
 #internship a {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 @media only screen and (min-width: 700px) {
@@ -44,20 +47,35 @@
   }
 
   .detailed-info2 {
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 36px;
   }
 
-
+  .detailed-info2 p {
+    margin: unset;
+    padding: unset;
+  }
 
   .right-item {
     grid-column-start: 2;
     grid-column-end: 3;
   }
 
+  .right-item > p {
+    text-align: right;
+    margin-right: 30px;
+  }
+
   .left-item {
     grid-column-start: 1;
     grid-column-end: 2;
+  }
+
+  .left-item p {
+    text-align: left;
+    margin-left: 30px;
   }
 
 }
@@ -67,7 +85,7 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .intern img {
+  .intern > img {
     width: 100%;
     height: auto;
   }

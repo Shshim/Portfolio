@@ -1,93 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/html5reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
 
-    <title>Document</title>
-</head>
+        <title>Document</title>
+    </head>
 
-<body>
-    <a class="skip" href="#skip">Skip to Main Content</a>
-    <header>
-        <nav class="nav_bar">
-            <div>
-                <ul>
-                    <li id="show-menu"><a href="">Show Menu</a></li>
-                    <li id="hide-menu"><a href="">Hide Menu</a></li>
-                    <li id="index"><a href="index.html">About Us</a></li>
-                    <li id="internship"><a href="internship.html">Internship</a></li>
-                    <li id="hobby"><a href="hobby.html">Hobby</a></li>
-                    <li id="future"><a href="future.html"> Contacts</a> </li>
-                </ul>
-            </div>
-        </nav>
-        
-    </header>
-
-    <main class="container" id="skip">
-        <p><span id='time'></span></p>
-        <h1> About Us </h1>
-        <div class="card">
-            <div class="card_inner" id="card_woosuk">
-                <div class="card_face front">
-                    <h2> Click to reveal Woosuk</h2>
+    <body>
+        <a class="skip" href="#skip">Skip to Main Content</a>
+        <header>
+            <nav class="nav_bar">
+                <div>
+                    <ul>
+                        <li id="show-menu"><a href="">Show Menu</a></li>
+                        <li id="hide-menu"><a href="">Hide Menu</a></li>
+                        <li id="index"><a href="index.html">About Us</a></li>
+                        <li id="internship"><a href="internship.html">Internship</a></li>
+                        <li id="hobby"><a href="hobby.html">Hobby</a></li>
+                        <li id="future"><a href="future.html"> Contacts</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="card_face back">
-                    <div class="card_content">
-                        <div class="card_header">
-                            <img src="images/woosuk.jpg" alt="a picture of a distinguished gentlemen named Woosuk" class="pfp" />
-                            <h2> Woosuk Kang </h2>
+            </nav>
+
+        </header>
+
+        <main class="container" id="skip">
+            <p><span id='time'></span></p>
+            <h1> About Us </h1>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card_inner" id="card_woosuk">
+                        <div class="card_face front">
+                            <h2> Click to reveal Woosuk</h2>
                         </div>
-                        <div class="card_body">
-                            <h3>
-                                Computer Science student at the University of Michigan
-                            </h3>
-                            <p>
-                                I'm currently pursuing a Bachelor's Degree in Computer Science in the College of Engineering. I interned as a software enginner at Bank of America in Chicago over the summer and will be joining them again as a new grad in July 2023.
-                            </p>
+                        <div class="card_face back">
+                            <div class="card_content">
+                                <div class="card_header">
+                                    <img src="images/woosuk.jpg" alt="a picture
+                                        of a
+                                        distinguished gentlemen named Woosuk"
+                                        class="pfp" />
+                                    <h2> Woosuk Kang </h2>
+                                </div>
+                                <div class="card_body">
+                                    <h3>
+                                        Computer Science student at the
+                                        University of Michigan
+                                    </h3>
+                                    <p>
+                                        I'm currently pursuing a Bachelor's
+                                        Degree in Computer Science in the
+                                        College of Engineering. I interned as a
+                                        software enginner at Bank of America in
+                                        Chicago over the summer and will be
+                                        joining them again as a new grad in July
+                                        2023.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card_inner" id="card_daniel">
+                        <div class="card_face front">
+                            <h2> Click to reveal Daniel</h2>
+                        </div>
+                        <div class="card_face back">
+                            <div class="card_content">
+                                <div class="card_header">
+                                    <img src="images/Daniel.png" alt="Daniel
+                                        Shim
+                                        senior portrait" class="pfp" />
+                                    <h2> Daniel Shim </h2>
+                                </div>
+                                <div class="card_body">
+                                    <h3>
+                                        Computer Science student at the
+                                        University of Michigan
+                                    </h3>
+                                    <p>
+                                        I'm currently pursuing a Bachelor's
+                                        Degree in Computer Science in the
+                                        College of Engineering. I interned as a
+                                        software enginner at Capital One in
+                                        McLean, VA over the summer. I will be
+                                        joining SUGS in fall 2023.
+
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <script src="js/func.js"></script>
+            <script src="js/index.js"></script>
+        </main>
 
-        <div class="card">
-            <div class="card_inner" id="card_daniel">
-                <div class="card_face front">
-                    <h2> Click to reveal Daniel</h2>
-                </div>
-                <div class="card_face back">
-                    <div class="card_content">
-                        <div class="card_header">
-                            <img src="images/Daniel.png" alt="Daniel Shim senior portrait" class="pfp" />
-                            <h2> Daniel Shim </h2>
-                        </div>
-                        <div class="card_body">
-                            <h3>
-                                Computer Science student at the University of Michigan
-                            </h3>
-                            <p>
-                                I'm currently pursuing a Bachelor's Degree in Computer Science in the College of Engineering. I interned as a software enginner at Capital One in McLean, VA over the summer. I will be joining SUGS in fall 2023.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script src="js/func.js"></script>
-        <script src="js/index.js"></script>
-    </main>
+        <footer>
+            Daniel and Woosuk copyright &copy
+        </footer>
 
-    <footer>
-        Daniel and Woosuk copyright &copy
-    </footer>
-
-</body>
+    </body>
 
 </html>

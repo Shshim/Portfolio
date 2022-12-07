@@ -5,7 +5,7 @@
 // });
 
 
-document.querySelector("#show-menu").addEventListener("click", function () {
+document.querySelector("#show-menu").addEventListener("click", function (event) {
     event.preventDefault();
     console.log("worked");
     document.querySelector("#show-menu").style.display = "none";

@@ -22,15 +22,13 @@
 }
 
 #hobby {
-  padding: 10px;
-  font-size: 40px;
-  text-decoration: none;
   background-color: cyan;
   font-weight: bolder;
+  text-decoration: none;
 }
 
 #hobby a {
-  font-size: 24px;
+  /* font-size: 24px; */
 }
 
 

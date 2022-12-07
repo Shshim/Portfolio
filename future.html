@@ -32,33 +32,57 @@
         <h1>Contacts</h1>
         <div>
             <p>
-                If you have questions or want to contact us, 
-                Contact us via:
+                If you have questions, contact us via following forms:
             </p>
         </div>
         <div class="email">
             <div>
-                <h2>Email to Woosuk</h2>
+                <h2>Contact Woosuk</h2>
             </div>
             <div class="myText">
-                <label for="text1"><p class="label">Woosuk</p></label>
-                <textarea id="text1" rows="10" cols="40" placeholder="Dear Woosuk Kang,"></textarea>
-            </div>
-            <div class="button1">
-                <button class="b1" onclick="sendMail1(); return false">Send</button>
+                <form action="https://formspree.io/f/mdojqzwr" method="POST">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                    <br><br>
+                    <label for="email">Personal Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <br><br>
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number" name="number" placeholder="Phone Number">
+                    <br><br>
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Message">&#8205;
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
         <div class="email">
             <div>
-                <h2>Email to Daniel</h2>
+                <h2>Contact Daniel</h2>
             </div>
             <div class="myText">
-                <label for="text2"><p class="label">Daniel</p></label>
-                <textarea id="text2" rows="10" cols="40" placeholder="Dear Daniel Shim,"></textarea>
+                <form action="https://formspree.io/f/mdojqzwr" method="POST">
+                    <label for="fname">Full Name</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Full Name">
+                    <br><br>
+                    <label for="email">Personal Email</label>
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <br><br>
+                    <label for="number">Phone Number</label>
+                    <input type="text" id="number" name="number" placeholder="Phone Number">
+                    <br><br>
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" placeholder="Message">&#8205;
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <!-- <label for="text2"><p class="label">Daniel</p></label>
+                <textarea id="text2" rows="10" cols="40" placeholder="Dear Daniel Shim,"></textarea> -->
             </div>
-            <div class="button1">
+            <!-- <div class="button1">
                 <button class="b1" onclick="sendMail2(); return false">Send</button>
-            </div>
+            </div> -->
         </div>
         <script src="js/func.js"></script>
     </main>
